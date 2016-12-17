@@ -1,6 +1,7 @@
 html,body{
   margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 .clearfix:after{
   visibility: hidden;
@@ -41,5 +42,8 @@ canvas{
   left: 3000px;
 }
 #inputsize{
+  position: absolute;
+  top: 5px;
   width: 100px;
+  vertical-align: middle;
 }
