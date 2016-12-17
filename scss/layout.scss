@@ -1,0 +1,45 @@
+html,body{
+  margin: 0;
+  height: 100%;
+}
+.clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+* html .clearfix{
+  zoom: 1;
+}
+*:first-child + html .clearfix{
+  zoom: 1;
+}
+$s:30px;
+.banner{
+  position: fixed;
+  height: $s;
+  width: 100%;
+  background-color: lightsteelblue;
+  div{
+    float: left;
+    height: $s;
+    width: 20%;
+    img {
+      height: $s;
+      width: $s;
+    }
+  }
+}
+canvas{
+  position: absolute;
+  top:$s;
+}
+#inputcolor{
+  position: absolute;
+  left: 3000px;
+}
+#inputsize{
+  width: 100px;
+}
