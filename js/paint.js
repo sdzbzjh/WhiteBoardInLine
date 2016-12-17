@@ -1,7 +1,7 @@
 /**
  * Created by zhengjh on 2016/12/17.
  */
-var paint=(function (context,penColor,penSize,array_paint) {
+var paint=function (context,penColor,penSize,array_paint) {
     context.strokeStyle = penColor;
     context.lineWidth = penSize;
     context.beginPath();
@@ -18,4 +18,4 @@ var paint=(function (context,penColor,penSize,array_paint) {
     }
     context.closePath();
     context.stroke();
-});
+};
